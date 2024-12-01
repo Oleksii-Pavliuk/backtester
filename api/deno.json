@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "axios": "npm:axios@^1.7.7",
+    "express": "npm:express@4.18.2"
+  }
+}

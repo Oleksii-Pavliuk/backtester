@@ -1,0 +1,13 @@
+POST http://localhost:8000/upload HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample"
+}
+
+###
+POST http://localhost:8000/subscribe/bcc75d37-9f33-40f6-856f-91a3763dc6e5 HTTP/1.1
+content-type: application/json
+
+{
+}

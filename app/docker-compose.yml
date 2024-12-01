@@ -1,0 +1,29 @@
+---
+
+########
+########          DO NOT FORGET TO EDIT ENV VARIABLES
+########                  FOR DB CONTAINERS
+########                    IN PRODUCTION
+########
+
+
+services:
+  users-postgres:
+    image: postgres
+    container_name: users-db-postgres
+    environment:
+      - POSTGRES_USER=transactions50adminUsers
+      - POSTGRES_PASSWORD=RabbitMQconfigurationbypullingfromthesystem
+      - POSTGRES_DB=usersPostgres
+    ports:
+      - "5432:5432"
+
+  users-mongo:
+    image: mongo
+    container_name: users-db-mongo
+    environment:
+      - MONGO_INITDB_DATABASE=users_dev
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    ports:
+      - "27017:27017"
